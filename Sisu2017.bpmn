@@ -124,7 +124,7 @@
       <bpmn:startEvent id="StartEvent_0zsd8xb">
         <bpmn:outgoing>SequenceFlow_1elwkw7</bpmn:outgoing>
       </bpmn:startEvent>
-      <bpmn:task id="Task_10ejze9" name="Analisar o Sisu 2016">
+      <bpmn:task id="Task_10ejze9" name="Analisar o Sisu 2016 e passado">
         <bpmn:incoming>SequenceFlow_1elwkw7</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_0vu9bjo</bpmn:outgoing>
       </bpmn:task>
@@ -147,6 +147,7 @@
       <bpmn:association id="Association_0qwyc6m" sourceRef="Task_10ejze9" targetRef="TextAnnotation_0xfmbof" />
       <bpmn:association id="Association_07ldv7b" sourceRef="Task_0142n4b" targetRef="TextAnnotation_0dgxx0e" />
       <bpmn:association id="Association_1m6y5f1" sourceRef="Task_0ny45ci" targetRef="TextAnnotation_0v357n7" />
+      <bpmn:association id="Association_0tgzsen" sourceRef="Task_10ejze9" targetRef="TextAnnotation_0qb489p" />
     </bpmn:subProcess>
     <bpmn:sequenceFlow id="SequenceFlow_059uakg" sourceRef="SubProcess_0a82j31" targetRef="SubProcess_1b4vnvz" />
     <bpmn:sequenceFlow id="SequenceFlow_06y860p" sourceRef="SubProcess_1b4vnvz" targetRef="IntermediateThrowEvent_0gpilgi" />
@@ -471,6 +472,8 @@ Definir responsáveis por áreas(processo, requisitos, funcionalidades, scripts/
     <bpmn:textAnnotation id="TextAnnotation_1laf6kt">    <bpmn:text>~30h</bpmn:text>
 </bpmn:textAnnotation>
     <bpmn:association id="Association_0janovl" sourceRef="Task_1s4dm5t" targetRef="TextAnnotation_1laf6kt" />
+    <bpmn:textAnnotation id="TextAnnotation_0qb489p">    <bpmn:text>Experiência da equipe</bpmn:text>
+</bpmn:textAnnotation>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
@@ -1461,6 +1464,13 @@ Definir responsáveis por áreas(processo, requisitos, funcionalidades, scripts/
       <bpmndi:BPMNEdge id="Association_0janovl_di" bpmnElement="Association_0janovl">
         <di:waypoint xsi:type="dc:Point" x="539" y="2059" />
         <di:waypoint xsi:type="dc:Point" x="539" y="2012" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0qb489p_di" bpmnElement="TextAnnotation_0qb489p">
+        <dc:Bounds x="811" y="889" width="100" height="30" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_0tgzsen_di" bpmnElement="Association_0tgzsen">
+        <di:waypoint xsi:type="dc:Point" x="972" y="736" />
+        <di:waypoint xsi:type="dc:Point" x="871" y="889" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
